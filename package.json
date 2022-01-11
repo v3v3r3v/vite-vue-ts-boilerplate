@@ -8,7 +8,7 @@
     "ssr:dev": "node server",
     "ssr:build:client": "vite build --outDir dist/client --ssrManifest",
     "ssr:build:server": "vite build --outDir dist/server --ssr src/entry-server.js",
-    "ssr:build": "concurrently npm:build:*",
+    "ssr:build": "concurrently npm:ssr:build:*",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install && npx husky add .husky/pre-commit \"npm run pre-commit\"",
